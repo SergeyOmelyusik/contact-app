@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.container {
+    overflow: hidden;
+    width: 40%;
+    margin: 0 auto;
+    background: linear-gradient(45deg, #5095d6, #60c1ee);
+    height: calc(100% - 30px);
+    padding: 30px 70px 0 70px;
+}
+
+.contacts {
+    overflow-y: scroll;
+    height: 80%;
+}
+
+.contacts__header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.contacts::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+.contacts::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset; */
+    background-color: linear-gradient(45deg, #5095d6, #60c1ee);
+    border-radius: 10px;
+  }
+  
+.contacts::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(45deg, #5095d6, #60c1ee);
+  }
+
+.btn_add {
+    width: 64px;
+    height: 64px;
+    background-image: url(../images/plus.png);
+    cursor: pointer;
+}
+
+.add__form {
+    flex-direction: column;
+    width: 90%;
+    display: flex;
+    border:3px solid #5095d6;
+    padding: 20px;
+    justify-content: center;
+}
+
+.add__form > form {
+    width: 100%;
+    text-align: center;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.field input {
+    width: 80%;
+    padding: 10px 5px;
+    margin-top: 5px;
+    border: 5px solid #5095d6;
+}
+
+.btn__added {
+    padding: 5px 30px;
+    text-transform: uppercase;
+    background-color:transparent;
+    border: 5px solid #fff;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.validate_msg {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: red;
+}
+.contact__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 3px solid #5095d6;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.contact__item__buttons {
+    display: flex;
+}
+
+.edit__btn {
+    width: 32px;
+    height: 32px;
+    background-image:url(../images/edit.png);
+    cursor:pointer;
+    margin: 0 10px;
+}
+
+.delete__btn {
+    width: 32px;
+    height: 32px;
+    background-image:url(../images/delete-user.png);
+    cursor:pointer; 
+}
+
+.edit__popup {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items:center;
+    justify-content: center;
+}
+
+.popup__modal {
+    color:#000;
+    background-color: #fff;
+    position: relative;
+    max-width: 70%;
+    min-width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    opacity: 0.9;
+    font-size: 20px;
+    text-align: center;
+}
+
+.popup__modal .done {
+    font-size: 24px;
+    color:#2fc422;
+    margin: 10px;
+
+}
+
+.close__popup {
+    position: absolute;
+    top: -60px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    font-family: monospace;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    opacity: 0.6;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.close__popup:hover {
+    opacity: 1;
+}
+
+.edit__form {
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+}
+
+.edit__form > form > div {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.edit__form input {
+    padding: 10px 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border:2px solid #5095d6;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    font-size: 18px;
+}
+
+.edit__form .save {
+    background-color:transparent;
+    padding: 5px 30px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    border: 3px solid #5095d6;
+    color: #5095d6;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.edit__form .save:hover {
+    border: 3px solid #2fc422;
+    color: #2fc422;
+}
+
+.hidden {
+    display: none;
+}

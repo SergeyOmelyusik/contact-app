@@ -1,0 +1,108 @@
+@media (max-width:768px) {
+    
+    .container {
+        width: calc(100% - 70px);
+        padding: 30px 20px 0 50px;
+        height: calc(100% - 30px);
+    }
+    .contacts__header {
+        justify-content: space-evenly;
+    }
+    .add__form {
+        margin: 0 auto;
+        width: 70%;
+    }
+} 
+
+@media (max-width:426px) {
+
+    .container {
+        width: calc(100% - 40px);
+        padding: 30px 20px 0px 20px;
+        height: calc(100% - 30px);
+    }
+    .contacts__header {
+        font-size: 18px;
+        align-items:center;
+    }
+
+    .btn_add {
+        width: 32px;
+        height: 32px;
+        background-image: url(../images/plus-mobile.png);
+        cursor: pointer;
+    }
+
+    .contacts::-webkit-scrollbar {
+        width: 0px;
+      }
+
+      .contacts {
+        overflow-y: scroll;
+        height: 85%;
+    }
+
+    .contact__item {
+        border: 2px solid #5095d6;
+    }
+
+    .contact__item__content h3 {
+        font-size: 16px;
+    }
+
+    .contact__item__buttons {
+        flex-direction: column;
+        align-items:center;
+        
+    }
+
+    .edit__btn {
+        margin-bottom: 10px;
+    }
+    
+    .delete__btn {
+        width: 32px;
+        height: 32px;
+        background-image:url(../images/delete-user.png);
+        cursor:pointer; 
+    }
+
+    .add__form {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .field input {
+        border: 3px solid #5095d6;
+        padding: 5px 5px;
+    }
+
+    .btn__added {
+        padding: 5px 40px;
+        border: 3px solid #fff;
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width:376px) {
+    .contacts__header {
+        font-size: 16px;
+        align-items:center;
+    }
+
+    .popup__modal {
+        min-width: 280px;
+        padding: 15px;
+    }
+
+    .edit__form input {
+        padding: 5px;
+        margin-left: 0px;
+        margin-top: 10px;
+        border:2px solid #5095d6;
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+        font-size: 18px;
+    }
+}
